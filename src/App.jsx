@@ -8,7 +8,7 @@ import {
 export default function App() {
   return (
     <>
-      <div className="flex items-center">
+      <div className="">
         {/* <SpinningShapeShiftingDiv />
         <HoverFramer /> */}
         {/* <DragFramer letter={"N"} />

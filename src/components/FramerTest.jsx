@@ -112,6 +112,10 @@ function ParallaxText({ children, baseVelocity = 100 }) {
         <span className=" font-serif text-red-200">{children} </span>
         <span className=" font-serif text-red-200">{children} </span>
         <span className=" font-serif text-red-200">{children} </span>
+        <span className=" font-serif text-red-200">{children} </span>
+        <span className=" font-serif text-red-200">{children} </span>
+        <span className=" font-serif text-red-200">{children} </span>
+        <span className=" font-serif text-red-200">{children} </span>
       </motion.div>
     </div>
   );
@@ -120,17 +124,17 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export function SpeedText() {
   return (
     <section>
-      <ParallaxText baseVelocity={2}>
-        <p className="me-5 inline font-sans2 text-[3rem] italic">NEW HOPE</p>{" "}
-        youth
+      <ParallaxText baseVelocity={1}>
+        <p className="me-5 inline font-sans2 text-[3rem] italic tracking-wider">
+          TYLER
+        </p>{" "}
+        yocum
       </ParallaxText>
-      <ParallaxText baseVelocity={-2}>
-        <p className="me-5 inline font-sans2 text-[3rem] italic">NEW HOPE</p>{" "}
-        youth
-      </ParallaxText>
-      <ParallaxText baseVelocity={-2}>
-        <p className="me-5 inline font-sans2 text-[3rem] italic">NEW HOPE</p>{" "}
-        youth
+      <ParallaxText baseVelocity={-1}>
+        <p className="me-5 inline font-sans2 text-[3rem] italic tracking-wider">
+          TYLER
+        </p>{" "}
+        yocum
       </ParallaxText>
     </section>
   );
