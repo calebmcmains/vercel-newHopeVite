@@ -131,14 +131,14 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export function SpeedText() {
   return (
-    <section>
-      <ParallaxText baseVelocity={2}>
+    <section className="h-screen">
+      <ParallaxText baseVelocity={1}>
         <p className="me-2 inline font-sans2 text-[1rem] italic tracking-wider">
           TYLER
         </p>
         <p className="inline  text-[1.5rem]">yocum</p>
       </ParallaxText>
-      <ParallaxText baseVelocity={-2}>
+      <ParallaxText baseVelocity={-1}>
         <p className="me-2 inline font-sans2 text-[1rem] italic tracking-wider">
           TYLER
         </p>
