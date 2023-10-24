@@ -73,7 +73,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
    * have to replace for wrapping that works for you or dynamically
    * calculate
    */
-  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(0, 10, v)}%`);
 
   const directionFactor = useRef(1);
   useAnimationFrame((t, delta) => {
@@ -102,8 +102,16 @@ function ParallaxText({ children, baseVelocity = 100 }) {
    * dynamically generated number of children.
    */
   return (
-    <div className="parallax">
-      <motion.div className="scroller" style={{ x }}>
+    <div className="parallax ">
+      <motion.div className="scroller " style={{ x }}>
+        <span className=" font-serif text-red-200">{children} </span>
+        <span className=" font-serif text-red-200">{children} </span>
+        <span className=" font-serif text-red-200">{children} </span>
+        <span className=" font-serif text-red-200">{children} </span>
+        <span className=" font-serif text-red-200">{children} </span>
+        <span className=" font-serif text-red-200">{children} </span>
+        <span className=" font-serif text-red-200">{children} </span>
+        <span className=" font-serif text-red-200">{children} </span>
         <span className=" font-serif text-red-200">{children} </span>
         <span className=" font-serif text-red-200">{children} </span>
         <span className=" font-serif text-red-200">{children} </span>
@@ -124,17 +132,11 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export function SpeedText() {
   return (
     <section>
-      <ParallaxText baseVelocity={1}>
-        <p className="me-5 inline font-sans2 text-[3rem] italic tracking-wider">
+      <ParallaxText baseVelocity={2}>
+        <p className="me-2 inline font-sans2 text-[1rem] italic tracking-wider">
           TYLER
-        </p>{" "}
-        yocum
-      </ParallaxText>
-      <ParallaxText baseVelocity={-1}>
-        <p className="me-5 inline font-sans2 text-[3rem] italic tracking-wider">
-          TYLER
-        </p>{" "}
-        yocum
+        </p>
+        <p className="inline  text-[1.5rem]">yocum</p>
       </ParallaxText>
     </section>
   );
