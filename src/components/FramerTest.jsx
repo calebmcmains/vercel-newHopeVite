@@ -52,7 +52,7 @@ export const DragFramer = ({ letter }) => (
   //   }}
   // />
   <motion.div className="" drag dragElastic={0} dragMomentum={false}>
-    <span className="text-[15rem] font-bold text-blue-400">{letter}</span>
+    <span className="text-[5rem] font-bold text-blue-400">{letter}</span>
   </motion.div>
 );
 
@@ -133,6 +133,12 @@ export function SpeedText() {
   return (
     <section>
       <ParallaxText baseVelocity={2}>
+        <p className="me-2 inline font-sans2 text-[1rem] italic tracking-wider">
+          TYLER
+        </p>
+        <p className="inline  text-[1.5rem]">yocum</p>
+      </ParallaxText>
+      <ParallaxText baseVelocity={-2}>
         <p className="me-2 inline font-sans2 text-[1rem] italic tracking-wider">
           TYLER
         </p>
