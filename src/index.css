@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter+Tight&family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  section {
+    padding-top: 85vh;
+    padding-bottom: 85vh;
+    position: relative;
+  }
+
+  .parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .parallax .scroller {
+    font-weight: 600;
+    font-size: 64px;
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .parallax span {
+    display: block;
+    margin-right: 30px;
+  }
+}
