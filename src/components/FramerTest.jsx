@@ -134,13 +134,13 @@ export function SpeedText() {
     <section className="h-screen">
       <ParallaxText baseVelocity={1}>
         <p className="me-2 inline font-sans2 text-[1rem] italic tracking-wider">
-          CALE
+          CALEB
         </p>
         <p className="inline  text-[1.5rem]">mcmains</p>
       </ParallaxText>
       <ParallaxText baseVelocity={-1}>
         <p className="me-2 inline font-sans2 text-[1rem] italic tracking-wider">
-          CALE
+          CALEB
         </p>
         <p className="inline  text-[1.5rem]">mcmains</p>
       </ParallaxText>
